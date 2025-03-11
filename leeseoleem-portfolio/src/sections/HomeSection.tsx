@@ -17,13 +17,13 @@ const HomeSection = () => {
       ></ReactTyped>
       <div className="space-y-4 text-xl text-gray-50">
         <p>
-          안녕하세요, 사용자 중심의 직관적이고 매력적인 경험을 만드는{" "}
+          안녕하세요, 사용자 중심의 직관적이고 매력적인 경험을 만드는
           <br className="md:hidden" />
           프론트엔드 개발자 이서림입니다.
         </p>
         <p>
-          저는 팀장으로서 Notion과 GitHub를 활용한 효율적인 협업과 진행한 경험이
-          있으며, <br className="md:hidden" />
+          저는 팀장으로서 효율적인 협업과 전반적인 진행을 관리한 경험이 있으며,
+          <br className="md:hidden" />
           빠르게 프로젝트 요구사항을 이해하고 이를 효과적인 솔루션으로 구현할 수
           있습니다. <br />
           뛰어난 의사소통과 문제 해결 능력을 바탕으로 팀 환경에서 역량을

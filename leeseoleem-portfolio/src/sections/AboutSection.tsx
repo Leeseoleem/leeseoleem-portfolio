@@ -35,7 +35,7 @@ const AboutSection = () => {
     >
       <div className="container px-4">
         <h1 className="text-6xl font-bold">About Me</h1>
-        <div className="flex flex-col  md:flex-row w-full mx-auto m-12 gap-x-16 rounded-xl bg-gray-white">
+        <div className="flex flex-col md:flex-row w-full mx-auto m-12 gap-x-16 rounded-xl bg-gray-white">
           <div className="flex flex-col items-center p-12 space-y-6 ">
             <img
               src={myIcon}
@@ -54,7 +54,7 @@ const AboutSection = () => {
               </IconButton>
             </div>
           </div>
-          <div className="flex flex-col x-full justify-between py-16">
+          <div className="flex flex-col x-full justify-between py-16 px-12 gap-y-4">
             <AboutInfo title="이름" icon={PersonIcon}>
               이서림
             </AboutInfo>

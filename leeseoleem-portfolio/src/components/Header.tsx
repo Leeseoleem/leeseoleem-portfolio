@@ -16,9 +16,11 @@ const Header = () => {
               About
             </Link>
           </li>
-          <Link to="skills" smooth duration={500}>
-            Skills
-          </Link>
+          <li className="cursor-pointer hover:text-primary ">
+            <Link to="skills" smooth duration={500}>
+              Skills
+            </Link>
+          </li>
           <Link to="projects" smooth duration={500}>
             Projects
           </Link>

@@ -6,7 +6,7 @@ type AboutInfoProps = {
 
 const AboutInfo = ({ icon: Icon, title, children }: AboutInfoProps) => {
   return (
-    <div className="flex items-center gap-x-8">
+    <div className="flex items-center gap-x-8 text-gray-font">
       <div className="p-3 rounded-full bg-gray-20">
         <Icon fontSize="large" color="action" />
       </div>
