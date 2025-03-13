@@ -5,7 +5,7 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      className="container mt-12 px-4 py-32 md:py-32 space-y-12 text-gray-font font-pretendard"
+      className="container px-4 py-32 md:py-32 space-y-12 text-gray-font font-pretendard"
     >
       <ReactTyped
         strings={["Hello, I'm seoleem Lee!"]}
@@ -13,7 +13,7 @@ const HomeSection = () => {
         backSpeed={10} // 삭제되는 속도
         backDelay={6000} // 삭제 전 대기
         loop // 애니메이션 루프
-        className="text-6xl font-bold "
+        className="text-6xl font-black"
       ></ReactTyped>
       <div className="space-y-4 text-xl text-gray-50">
         <p>
