@@ -46,12 +46,12 @@ const SkillsSection = () => {
 
             <TabPanels>
               <TabPanel>
-                <div className="flex flex-col w-full bg-white">
+                <div className="flex flex-col w-full rounded-xl rounded-tl-none bg-white">
                   <div className="flex items-center m-10 space-x-12">
                     <p className="text-[24px] font-semibold w-[120px]">
                       Languages
                     </p>
-                    <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+                    <div className="flex flex-col space-y-4 xl:flex-row xl:space-y-0 xl:space-x-4">
                       <TechnologyBadge
                         Icon={SiJavascript}
                         label="JavaScript"
@@ -111,7 +111,7 @@ const SkillsSection = () => {
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="flex flex-col w-full bg-white">
+                <div className="flex flex-col w-full rounded-xl rounded-tl-none bg-white">
                   <div className="flex items-center m-10 space-x-12">
                     <p className="text-[24px] font-semibold w-[120px]">
                       Languages
@@ -144,7 +144,7 @@ const SkillsSection = () => {
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="flex flex-col w-full bg-white">
+                <div className="flex flex-col w-full rounded-xl rounded-tl-none bg-white">
                   <div className="flex items-center m-10 space-x-12">
                     <p className="text-[24px] font-semibold w-[120px]">
                       Collaboration

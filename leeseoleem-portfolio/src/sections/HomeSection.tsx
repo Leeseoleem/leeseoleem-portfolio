@@ -15,7 +15,7 @@ const HomeSection = () => {
         loop // 애니메이션 루프
         className="text-6xl font-black"
       ></ReactTyped>
-      <div className="space-y-4 text-xl text-gray-50">
+      <div className="space-y-4 text-xl font-medium text-gray-50">
         <p>
           안녕하세요, 사용자 중심의 직관적이고 매력적인 경험을 만드는
           <br className="md:hidden" />

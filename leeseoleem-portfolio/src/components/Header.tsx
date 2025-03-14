@@ -21,10 +21,11 @@ const Header = () => {
               Skills
             </Link>
           </li>
-          <Link to="projects" smooth duration={500}>
-            Projects
-          </Link>
-
+          <li className="cursor-pointer hover:text-primary ">
+            <Link to="projects" smooth duration={500}>
+              Projects
+            </Link>
+          </li>
           <Link to="contact" smooth duration={500}>
             Contact
           </Link>

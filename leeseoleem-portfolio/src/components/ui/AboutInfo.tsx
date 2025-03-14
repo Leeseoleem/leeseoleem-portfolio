@@ -12,7 +12,7 @@ const AboutInfo = ({ icon: Icon, title, children }: AboutInfoProps) => {
       </div>
       <div>
         <p className="text-[18px] text-gray-50">{title}</p>
-        <p className="text-[24px]">{children}</p>
+        <p className="text-[24px] font-medium">{children}</p>
       </div>
     </div>
   );
