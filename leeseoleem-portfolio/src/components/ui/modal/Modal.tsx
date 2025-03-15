@@ -35,7 +35,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
         {/* 닫기 버튼 */}
         <div className="flex justify-between items-center mb-4">
           {/* 모달 제목 */}
-          <h2 className="text-[32px] font-bold">{title}</h2>
+          <h2 className="text-[40px] font-bold">{title}</h2>
           <button onClick={onClose} className="text-[24px]">
             ✖
           </button>

@@ -52,15 +52,15 @@ const ProjectsSection = () => {
             issueResolution={
               <div className="flex flex-col gap-y-4">
                 <div>
-                  <h3 className="text-[22px] font-semibold mb-2">이슈 내용</h3>
-                  <p className="text-[18px] text-gray-700">
+                  <h3 className="text-[20px] font-semibold mb-1">이슈 내용</h3>
+                  <p className="text-[18px] text-gray-60">
                     firebase의 onSnapshot() 사용 후 로그아웃 시 오류:
                     permission-denied
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-[22px] font-semibold mb-2">해결 방법</h3>
-                  <p className="text-[18px] text-gray-700">
+                  <h3 className="text-[20px] font-semibold mb-1">해결 방법</h3>
+                  <p className="text-[18px] text-gray-60">
                     onSnapshot() 함수 내부에 에러 처리 함수 작성하기
                   </p>
                   <a

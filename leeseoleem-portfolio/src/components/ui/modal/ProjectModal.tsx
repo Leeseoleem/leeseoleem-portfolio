@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
+import ImageCarousel from "../ImageSwiper";
+
+import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
 
 interface ModalTriggerProps {
   title: string;
   subTitle: string;
   contents: string[];
   description: string;
+  period: string;
+  n: number;
   technologies: string[];
   position: string[];
   pages: string[];
@@ -14,11 +20,20 @@ interface ModalTriggerProps {
   externalSite: React.ReactNode;
 }
 
+const imageUrls = [
+  "/images/main.jpg",
+  "/images/letter.jpg",
+  "/images/write.jpg",
+  "/images/list.jpg",
+];
+
 const ProjectModal: React.FC<ModalTriggerProps> = ({
   title,
   subTitle,
   contents,
   description,
+  period,
+  n,
   technologies,
   position,
   pages,
@@ -42,7 +57,7 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
 
       {/* Modal 컴포넌트 */}
       <Modal isOpen={isOpen} onClose={handleClose} title={title}>
-        <div className="flex flex-col gap-y-8 text-gray-font">
+        <div className="flex flex-col gap-y-16 text-gray-font">
           <div className="flex flex-col gap-y-4">
             <h3 className="text-[28px] font-bold">{subTitle}</h3>
             <ul className="list-disc ml-5 text-[20px] text-gray-60">
@@ -50,8 +65,29 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
                 <li key={index}>{content}</li>
               ))}
             </ul>
+            <div className="flex w-full">
+              <ImageCarousel images={imageUrls} />
+            </div>
             <hr />
             <p className="whitespace-pre-line text-[20px]">{description}</p>
+          </div>
+
+          <div className="flex md:flex-row flex-col w-full gap-y-3">
+            <div className="flex items-center gap-x-6">
+              <CalendarTodayIcon fontSize="large" />
+              <div>
+                <p className="text-gray-50 text-[18px]">기간</p>
+                <p className="text-[20px]">{period}</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-x-6 md:mx-auto">
+              {/* 가운데 정렬 */}
+              <PeopleAltOutlinedIcon fontSize="large" />
+              <div>
+                <p className="text-gray-50 text-[18px]">인원 수</p>
+                <p className="text-[20px]">{n}명</p>
+              </div>
+            </div>
           </div>
 
           <div className="flex flex-col gap-y-3">
