@@ -14,8 +14,9 @@ type Card = {
   pages: string[];
   details: string[];
   technologies: string[]; // ✅ 사용 기술 추가
-  issueResolution: React.ReactNode; // ✅ 이슈 해결 방법 추가
+  issueResolution?: React.ReactNode; // ✅ 이슈 해결 방법 추가
   externalSite: React.ReactNode;
+  imageUrls?: string[];
 };
 
 const ProjectCard = ({
@@ -31,10 +32,11 @@ const ProjectCard = ({
   technologies,
   issueResolution,
   externalSite,
+  imageUrls,
 }: Card) => {
   return (
-    <div className="w-full lg:w-1/2 border-gray-20 shadow-md border-2 rounded-xl text-gray-font">
-      <div className="flex flex-col p-8 gap-y-8">
+    <div className="w-full px-4 text-gray-font ">
+      <div className="flex flex-col border-gray-20 shadow-md border-2 rounded-xl p-8 gap-y-8">
         <div>
           <h3 className="text-[32px] font-semibold">{title}</h3>
           <h5 className="text-[20px] text-gray-50 mb-3">{subTitle}</h5>
@@ -98,6 +100,7 @@ const ProjectCard = ({
             details={details}
             issueResolution={issueResolution}
             externalSite={externalSite}
+            imageUrls={imageUrls}
           />
         </div>
       </div>

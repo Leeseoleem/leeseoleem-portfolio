@@ -16,16 +16,10 @@ interface ModalTriggerProps {
   position: string[];
   pages: string[];
   details: string[];
-  issueResolution: React.ReactNode;
+  issueResolution?: React.ReactNode;
   externalSite: React.ReactNode;
+  imageUrls?: string[];
 }
-
-const imageUrls = [
-  "/images/main.jpg",
-  "/images/letter.jpg",
-  "/images/write.jpg",
-  "/images/list.jpg",
-];
 
 const ProjectModal: React.FC<ModalTriggerProps> = ({
   title,
@@ -40,6 +34,7 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
   details,
   issueResolution,
   externalSite,
+  imageUrls,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -66,13 +61,15 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
               ))}
             </ul>
             <div className="flex w-full">
-              <ImageCarousel images={imageUrls} />
+              {(imageUrls?.length ?? 0) > 0 && (
+                <ImageCarousel images={imageUrls ?? []} />
+              )}
             </div>
             <hr />
             <p className="whitespace-pre-line text-[20px]">{description}</p>
           </div>
 
-          <div className="flex md:flex-row flex-col w-full gap-y-3">
+          <div className="flex lg:flex-row flex-col gap-y-3 ">
             <div className="flex items-center gap-x-6">
               <CalendarTodayIcon fontSize="large" />
               <div>
@@ -80,7 +77,7 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
                 <p className="text-[20px]">{period}</p>
               </div>
             </div>
-            <div className="flex items-center gap-x-6 md:mx-auto">
+            <div className="flex items-center gap-x-6 lg:mx-auto">
               {/* 가운데 정렬 */}
               <PeopleAltOutlinedIcon fontSize="large" />
               <div>
@@ -133,11 +130,12 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
               </ul>
             </div>
           </div>
-
-          <div className="flex flex-col gap-y-3">
-            <h3 className="text-[28px] font-bold">Trouble Shooting</h3>
-            <div className="text-[20px]">{issueResolution}</div>
-          </div>
+          {issueResolution && (
+            <div className="flex flex-col gap-y-3">
+              <h3 className="text-[28px] font-bold">ETC.</h3>
+              <div className="text-[20px]">{issueResolution}</div>
+            </div>
+          )}
           <div className="flex flex-col w-full gap-y-3">
             <h3 className="text-[28px] font-bold">Link</h3>
             <div className="flex w-full text-[20px]">{externalSite}</div>
