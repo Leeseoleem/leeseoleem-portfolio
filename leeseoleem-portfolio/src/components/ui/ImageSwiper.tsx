@@ -22,7 +22,7 @@ const ImageCarousel = ({ images }: ImageCarouselProps) => {
               <img
                 src={src}
                 alt={`Slide ${index}`}
-                className="w-full max-h-[720px] object-contain rounded-lg"
+                className="w-full h-[420px] md:h-[640px] object-contain rounded-lg"
               />
             </div>
           </SwiperSlide>

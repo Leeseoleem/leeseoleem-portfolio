@@ -17,9 +17,8 @@ const HomeSection = () => {
       ></ReactTyped>
       <div className="space-y-4 text-[16px] md:text-xl font-medium text-gray-50">
         <p>
-          안녕하세요, 사용자 중심의 직관적이고 매력적인 경험을 만드는
-          <br className="md:hidden" />
-          프론트엔드 개발자 이서림입니다.
+          안녕하세요, 사용자 중심의 직관적이고 매력적인 경험을 만드는 프론트엔드
+          개발자 이서림입니다.
         </p>
         <p>
           저는 팀장으로서 효율적인 협업과 전반적인 진행을 관리한 경험이 있으며,

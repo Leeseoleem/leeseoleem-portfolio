@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import CloseIcon from "@mui/icons-material/Close";
 
 interface ModalProps {
   isOpen: boolean; // 모달이 열려 있는지 여부
@@ -37,7 +38,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
           {/* 모달 제목 */}
           <h2 className="text-[30px] md:text-[40px] font-bold">{title}</h2>
           <button onClick={onClose} className="text-[24px]">
-            ✖
+            <CloseIcon />
           </button>
         </div>
         <div className="max-h-[60vh] overflow-y-auto">

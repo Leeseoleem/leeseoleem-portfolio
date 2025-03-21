@@ -47,7 +47,7 @@ const SkillsSection = () => {
 
             <TabPanels>
               <TabPanel>
-                <div className="flex flex-col w-full rounded-xl rounded-tl-none rounded-t-none bg-white">
+                <div className="flex flex-col w-full rounded-xl rounded-tl-none bg-white">
                   <div className="flex flex-col items-start md:flex-row md:items-center m-10 space-y-2">
                     <p className="text-[20px] font-semibold w-[120px]">
                       Languages
@@ -148,7 +148,7 @@ const SkillsSection = () => {
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="flex flex-col w-full rounded-xl md:rounded-tr-none bg-white">
+                <div className="flex flex-col w-full rounded-xl rounded-tr-none bg-white">
                   <div className="flex flex-col items-start md:flex-row md:items-center m-10 space-y-2">
                     <p className="text-[20px] font-semibold w-[140px]">
                       Collaboration

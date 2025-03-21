@@ -77,23 +77,25 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
             <div className="flex items-center gap-x-6">
               <CalendarTodayIcon fontSize="large" />
               <div>
-                <p className="text-gray-50 text-[18px]">기간</p>
-                <p className="text-[20px]">{period}</p>
+                <p className="text-gray-50 text-[12px] md:text-[18px]">기간</p>
+                <p className="text-[16px] md:text-[20px]">{period}</p>
               </div>
             </div>
             <div className="flex items-center gap-x-6 lg:mx-auto">
               {/* 가운데 정렬 */}
               <PeopleAltOutlinedIcon fontSize="large" />
               <div>
-                <p className="text-gray-50 text-[18px]">인원 수</p>
-                <p className="text-[20px]">{n}명</p>
+                <p className="text-gray-50 text-[12px] md:text-[18px]">
+                  인원 수
+                </p>
+                <p className="text-[16px] md:text-[20px]">{n}명</p>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col gap-y-3">
             <h3 className="text-[24px] md:text-[28px] font-bold">Tech Stack</h3>
-            <div className="flex flex-wrap gap-x-2">
+            <div className="flex flex-wrap gap-x-2 gap-y-2">
               {technologies.map((tech, index) => (
                 <div
                   key={index}

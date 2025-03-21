@@ -69,7 +69,7 @@ const AboutSection = () => {
               신한대학교 (컴퓨터공학과)
             </AboutInfo>
             <AboutInfo title="이메일" icon={EmailIcon}>
-              {`leeseorim0029@gamil.com`}
+              {`leeseorim0029@gmail.com`}
             </AboutInfo>
           </div>
         </div>
