@@ -11,6 +11,7 @@ import { SiVelog } from "react-icons/si";
 import { RiNotionFill } from "react-icons/ri";
 
 // ui Component
+import Title from "../components/ui/Title";
 import IconButton from "../components/ui/IconButton";
 import AboutInfo from "../components/ui/AboutInfo";
 
@@ -34,7 +35,7 @@ const AboutSection = () => {
       className="px-4 py-16 md:py-24 space-y-12 bg-gray-10 text-gray-font font-pretendard"
     >
       <div className="container px-4">
-        <h1 className="text-6xl font-bold">About Me</h1>
+        <Title>About Me</Title>
         <div className="flex flex-col lg:flex-row w-full mx-auto m-12 gap-x-16 rounded-xl bg-gray-white">
           <div className="flex flex-col items-center p-12 space-y-6 ">
             <img
@@ -68,7 +69,7 @@ const AboutSection = () => {
               신한대학교 (컴퓨터공학과)
             </AboutInfo>
             <AboutInfo title="이메일" icon={EmailIcon}>
-              leeseorim0029@gamil.com
+              {`leeseorim0029@gamil.com`}
             </AboutInfo>
           </div>
         </div>

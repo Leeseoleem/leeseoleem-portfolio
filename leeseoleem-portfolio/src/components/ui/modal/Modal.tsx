@@ -23,7 +23,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
 
   return (
     <div
-      className={`fixed inset-0 flex items-center w-screen h-screen px-32 bg-black bg-opacity-50 transition-opacity ${
+      className={`fixed inset-0 flex items-center w-screen px-0 md:px-32 bg-black bg-opacity-50 transition-opacity ${
         isOpen ? "opacity-100 visible" : "opacity-0 invisible"
       } pointer-events-auto z-50`}
       onClick={onClose}

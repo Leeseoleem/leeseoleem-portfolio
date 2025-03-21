@@ -1,10 +1,9 @@
 import React from "react";
+import Title from "../components/ui/Title";
 import ProjectCard from "../components/ui/ProjectCard";
 import {
   glassBottleProject,
-  glassBottleImageUrls,
   VRRS_Project,
-  VRRSImageUrls,
   portfolioProject,
 } from "../data/projectData";
 import {
@@ -25,6 +24,7 @@ import {
   VelogIcon,
   WebIcon,
 } from "../utils/Icons";
+import { GlassBottleImageUrls, VRRSImageUrls } from "../data/projectImage";
 
 const ProjectsSection = () => {
   return (
@@ -33,7 +33,7 @@ const ProjectsSection = () => {
       className="px-4 py-16 md:py-24 space-y-12 bg-gray-white text-gray-font font-pretendard"
     >
       <div className="container px-4">
-        <h1 className="text-6xl font-bold mb-12">Projects</h1>
+        <Title>Projects</Title>
         <div className="flex my-8 flex-col gap-y-6">
           <ProjectCard
             {...portfolioProject}
@@ -50,7 +50,7 @@ const ProjectsSection = () => {
           />
           <ProjectCard
             {...glassBottleProject}
-            imageUrls={glassBottleImageUrls}
+            imageUrls={GlassBottleImageUrls}
             issueResolution={
               <div className="flex flex-col gap-y-4">
                 <div>

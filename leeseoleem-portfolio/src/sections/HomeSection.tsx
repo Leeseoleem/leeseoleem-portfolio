@@ -5,7 +5,7 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      className="container px-4 py-32 md:py-32 space-y-12 text-gray-font font-pretendard"
+      className="container px-4 py-24 md:py-32 space-y-12 text-gray-font font-pretendard"
     >
       <ReactTyped
         strings={["Hello, I'm seoleem Lee!"]}
@@ -13,9 +13,9 @@ const HomeSection = () => {
         backSpeed={10} // 삭제되는 속도
         backDelay={6000} // 삭제 전 대기
         loop // 애니메이션 루프
-        className="text-6xl font-black"
+        className="text-3xl md:text-6xl font-black"
       ></ReactTyped>
-      <div className="space-y-4 text-xl font-medium text-gray-50">
+      <div className="space-y-4 text-[16px] md:text-xl font-medium text-gray-50">
         <p>
           안녕하세요, 사용자 중심의 직관적이고 매력적인 경험을 만드는
           <br className="md:hidden" />
@@ -25,7 +25,7 @@ const HomeSection = () => {
           저는 팀장으로서 효율적인 협업과 전반적인 진행을 관리한 경험이 있으며,
           <br className="md:hidden" />
           빠르게 프로젝트 요구사항을 이해하고 이를 효과적인 솔루션으로 구현할 수
-          있습니다. <br />
+          있습니다. <br /> <br className="md:hidden" />
           뛰어난 의사소통과 문제 해결 능력을 바탕으로 팀 환경에서 역량을
           발휘하며, <br className="md:hidden" />
           기업과 사용자 모두에게 가치를 전달하는 것을 목표로 합니다.

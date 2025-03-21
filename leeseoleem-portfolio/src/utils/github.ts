@@ -38,5 +38,5 @@ export const handleMyGit = () => {
 };
 
 export const handleMyWeb = () => {
-  window.location.href = "https://leeseoleem.github.io/leeseoleem-portfolio";
+  window.location.href = "https://leeseoleem.github.io/leeseoleem-portfolio/";
 };

@@ -19,7 +19,7 @@ const TechnologyBadge = ({
       className={`flex items-center gap-x-2 py-2 px-4 rounded-md ${bgColor}`}
     >
       <IconComponent fontSize="20px" color="white" />
-      <p className="text-[20px] text-gray-white">{label}</p>
+      <p className="text-[16px] text-gray-white">{label}</p>
     </div>
   );
 };

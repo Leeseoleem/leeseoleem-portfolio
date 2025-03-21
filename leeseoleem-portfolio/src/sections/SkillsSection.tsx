@@ -1,5 +1,6 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 
+import Title from "../components/ui/Title";
 import TechnologyBadge from "../components/ui/TechnologyBadge";
 import { FaReact } from "react-icons/fa";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -21,7 +22,7 @@ const SkillsSection = () => {
     <section id="skills">
       <div className="flex flex-col w-full justify-center px-4 py-16 md:py-24 bg-gray-10 font-pretendard text-gray-font">
         <div className="container">
-          <h1 className="text-6xl font-bold mb-12">Skills</h1>
+          <Title>Skills</Title>
           <TabGroup>
             <TabList className="flex w-full gap-x-4">
               <Tab
@@ -47,11 +48,11 @@ const SkillsSection = () => {
             <TabPanels>
               <TabPanel>
                 <div className="flex flex-col w-full rounded-xl rounded-tl-none bg-white">
-                  <div className="flex items-center m-10 space-x-12">
-                    <p className="text-[24px] font-semibold w-[120px]">
+                  <div className="flex flex-col items-start md:flex-row md:items-center m-10 space-y-2">
+                    <p className="text-[20px] font-semibold w-[120px]">
                       Languages
                     </p>
-                    <div className="flex flex-col space-y-4 xl:flex-row xl:space-y-0 xl:space-x-4">
+                    <div className="flex flex-col items-start space-y-4 xl:flex-row xl:space-y-0 xl:space-x-4">
                       <TechnologyBadge
                         Icon={SiJavascript}
                         label="JavaScript"
@@ -74,8 +75,9 @@ const SkillsSection = () => {
                       />
                     </div>
                   </div>
-                  <div className="flex items-center m-10 space-x-12">
-                    <p className="text-[24px] font-semibold w-[120px]">
+
+                  <div className="flex flex-col items-start md:flex-row md:items-center m-10 space-y-2">
+                    <p className="text-[20px] font-semibold w-[120px]">
                       Framework
                     </p>
                     <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
@@ -91,8 +93,9 @@ const SkillsSection = () => {
                       />
                     </div>
                   </div>
-                  <div className="flex items-center m-10 space-x-12">
-                    <p className="text-[24px] font-semibold w-[120px]">
+
+                  <div className="flex flex-col items-start md:flex-row md:items-center m-10 space-y-2">
+                    <p className="text-[20px] font-semibold w-[120px]">
                       Server
                     </p>
                     <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
@@ -112,8 +115,8 @@ const SkillsSection = () => {
               </TabPanel>
               <TabPanel>
                 <div className="flex flex-col w-full rounded-xl rounded-tl-none bg-white">
-                  <div className="flex items-center m-10 space-x-12">
-                    <p className="text-[24px] font-semibold w-[120px]">
+                  <div className="flex flex-col items-start md:flex-row md:items-center m-10 space-y-2">
+                    <p className="text-[20px] font-semibold w-[120px]">
                       Languages
                     </p>
                     <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
@@ -129,10 +132,11 @@ const SkillsSection = () => {
                       />
                     </div>
                   </div>
-                  <div className="flex items-center m-10 space-x-12">
-                    <p className="text-[24px] font-semibold w-[120px]">
+                  <div className="flex flex-col items-start md:flex-row md:items-center m-10 space-y-2">
+                    <p className="text-[20px] font-semibold w-[120px]">
                       Framework
                     </p>
+
                     <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
                       <TechnologyBadge
                         Icon={RiNextjsFill}
@@ -145,8 +149,8 @@ const SkillsSection = () => {
               </TabPanel>
               <TabPanel>
                 <div className="flex flex-col w-full rounded-xl rounded-tl-none bg-white">
-                  <div className="flex items-center m-10 space-x-12">
-                    <p className="text-[24px] font-semibold w-[120px]">
+                  <div className="flex flex-col items-start md:flex-row md:items-center m-10 space-y-2">
+                    <p className="text-[20px] font-semibold w-[140px]">
                       Collaboration
                     </p>
                     <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">

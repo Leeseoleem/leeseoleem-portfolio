@@ -11,8 +11,10 @@ const AboutInfo = ({ icon: Icon, title, children }: AboutInfoProps) => {
         <Icon fontSize="large" />
       </div>
       <div>
-        <p className="text-[18px] text-gray-50">{title}</p>
-        <p className="text-[24px] font-medium">{children}</p>
+        <p className="text-[14px] md:text-[18px] text-gray-50">{title}</p>
+        <p className="text-[18px] md:text-[24px] font-medium break-all">
+          {children}
+        </p>
       </div>
     </div>
   );
