@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/leeseoleem-portfolio/static/css/main.4802896a.css",
+    "main.js": "/leeseoleem-portfolio/static/js/main.6b982d36.js",
+    "static/js/453.a76130d6.chunk.js": "/leeseoleem-portfolio/static/js/453.a76130d6.chunk.js",
+    "static/media/PretendardVariable.ttf": "/leeseoleem-portfolio/static/media/PretendardVariable.c89dc775feed56569658.ttf",
+    "index.html": "/leeseoleem-portfolio/index.html",
+    "main.4802896a.css.map": "/leeseoleem-portfolio/static/css/main.4802896a.css.map",
+    "main.6b982d36.js.map": "/leeseoleem-portfolio/static/js/main.6b982d36.js.map",
+    "453.a76130d6.chunk.js.map": "/leeseoleem-portfolio/static/js/453.a76130d6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4802896a.css",
+    "static/js/main.6b982d36.js"
+  ]
+}
