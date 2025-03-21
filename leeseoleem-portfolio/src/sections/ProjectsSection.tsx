@@ -5,6 +5,7 @@ import {
   glassBottleImageUrls,
   VRRS_Project,
   VRRSImageUrls,
+  portfolioProject,
 } from "../data/projectData";
 import {
   handleGlassGit,
@@ -13,6 +14,8 @@ import {
   handleVRRSNotion,
   handleVRRSYoutube,
   envLink,
+  handleMyGit,
+  handleMyWeb,
 } from "../utils/github";
 import {
   FaGithubRef,
@@ -20,6 +23,7 @@ import {
   YoutubeIcon,
   NotionIcon,
   VelogIcon,
+  WebIcon,
 } from "../utils/Icons";
 
 const ProjectsSection = () => {
@@ -31,6 +35,19 @@ const ProjectsSection = () => {
       <div className="container px-4">
         <h1 className="text-6xl font-bold mb-12">Projects</h1>
         <div className="flex my-8 flex-col gap-y-6">
+          <ProjectCard
+            {...portfolioProject}
+            externalSite={
+              <div className="flex gap-x-8">
+                <button onClick={handleMyGit}>
+                  <FaGithubRef size="50" />
+                </button>
+                <button onClick={handleMyWeb}>
+                  <WebIcon size="50" />
+                </button>
+              </div>
+            }
+          />
           <ProjectCard
             {...glassBottleProject}
             imageUrls={glassBottleImageUrls}

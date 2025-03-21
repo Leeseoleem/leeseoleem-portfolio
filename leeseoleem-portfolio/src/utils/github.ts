@@ -31,3 +31,12 @@ export const envLink = () => {
   window.location.href =
     "https://velog.io/@leeseoleem1014/EXPO-.env-파일로-안전하게-서버-연동하기";
 };
+
+// 포트폴리오 프로젝트
+export const handleMyGit = () => {
+  window.location.href = "https://github.com/Leeseoleem/leeseoleem-portfolio";
+};
+
+export const handleMyWeb = () => {
+  window.location.href = "https://leeseoleem.github.io/leeseoleem-portfolio";
+};

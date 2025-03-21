@@ -102,3 +102,33 @@ export const VRRSImageUrls = [
   "/images/vrrs/i.jpg",
   "/images/vrrs/j.jpg",
 ];
+
+// 포트폴리오 웹 사이트
+export const portfolioProject = {
+  title: "이서림's Portfolio",
+  subTitle: "개인 포트폴리오 웹사이트",
+  contents: [
+    "React + TypeScript + Tailwind CSS 기반 웹사이트",
+    "프로젝트 및 기술 스택 소개를 위한 반응형 포트폴리오",
+  ],
+  description: `Portfolio Website는 개발자로서의 경험과 프로젝트를 정리하고 소개하기 위해 제작한 개인 웹사이트입니다.
+  자기소개, 기술 스택, 프로젝트 등을 한눈에 볼 수 있도록 구성하였으며,
+  다양한 해상도에 대응하는 반응형 웹으로 제작되었습니다.
+  react-scroll을 활용한 부드러운 페이지 이동과 swiper를 이용한 프로젝트 슬라이드를 통해 사용자 경험을 개선하였습니다.`,
+  period: "2025.03",
+  n: 1,
+  position: [
+    "Frontend Developer",
+    "UI 설계 및 반응형 구현",
+    "사이트 구조 설계",
+  ],
+  pages: ["Main", "About", "Skills", "Projects"],
+  details: [
+    "React + TypeScript 기반 페이지 구조 설계 및 컴포넌트 구성",
+    "Tailwind CSS를 활용한 반응형 스타일링",
+    "v0를 기반으로 한 레이아웃 생성 및 커스터마이징",
+    "react-scroll을 이용한 자연스러운 섹션 이동 구현",
+    "swiper를 활용한 프로젝트 이미지 슬라이드 구현",
+  ],
+  technologies: ["React", "TypeScript", "Tailwind CSS", "Github"],
+};
