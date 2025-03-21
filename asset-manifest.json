@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/leeseoleem-portfolio/static/css/main.1f4c6a97.css",
-    "main.js": "/leeseoleem-portfolio/static/js/main.cec5c362.js",
+    "main.css": "/leeseoleem-portfolio/static/css/main.286d94d3.css",
+    "main.js": "/leeseoleem-portfolio/static/js/main.91143511.js",
     "static/js/453.a76130d6.chunk.js": "/leeseoleem-portfolio/static/js/453.a76130d6.chunk.js",
     "static/media/PretendardVariable.ttf": "/leeseoleem-portfolio/static/media/PretendardVariable.c89dc775feed56569658.ttf",
     "index.html": "/leeseoleem-portfolio/index.html",
-    "main.1f4c6a97.css.map": "/leeseoleem-portfolio/static/css/main.1f4c6a97.css.map",
-    "main.cec5c362.js.map": "/leeseoleem-portfolio/static/js/main.cec5c362.js.map",
+    "main.286d94d3.css.map": "/leeseoleem-portfolio/static/css/main.286d94d3.css.map",
+    "main.91143511.js.map": "/leeseoleem-portfolio/static/js/main.91143511.js.map",
     "453.a76130d6.chunk.js.map": "/leeseoleem-portfolio/static/js/453.a76130d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f4c6a97.css",
-    "static/js/main.cec5c362.js"
+    "static/css/main.286d94d3.css",
+    "static/js/main.91143511.js"
   ]
 }
