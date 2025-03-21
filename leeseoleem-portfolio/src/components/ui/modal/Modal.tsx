@@ -23,7 +23,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
 
   return (
     <div
-      className={`fixed inset-0 flex items-center w-screen px-0 md:px-32 bg-black bg-opacity-50 transition-opacity ${
+      className={`fixed inset-0 flex items-center w-screen px-4 md:px-32 bg-black bg-opacity-50 transition-opacity ${
         isOpen ? "opacity-100 visible" : "opacity-0 invisible"
       } pointer-events-auto z-50`}
       onClick={onClose}
@@ -35,7 +35,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
         {/* 닫기 버튼 */}
         <div className="flex justify-between items-center mb-4">
           {/* 모달 제목 */}
-          <h2 className="text-[40px] font-bold">{title}</h2>
+          <h2 className="text-[30px] md:text-[40px] font-bold">{title}</h2>
           <button onClick={onClose} className="text-[24px]">
             ✖
           </button>

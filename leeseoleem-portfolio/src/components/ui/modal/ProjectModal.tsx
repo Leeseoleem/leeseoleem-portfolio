@@ -54,8 +54,10 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
       <Modal isOpen={isOpen} onClose={handleClose} title={title}>
         <div className="flex flex-col gap-y-16 text-gray-font">
           <div className="flex flex-col gap-y-4">
-            <h3 className="text-[28px] font-bold">{subTitle}</h3>
-            <ul className="list-disc ml-5 text-[20px] text-gray-60">
+            <h3 className="text-[24px] md:text-[28px] font-semibold text-gray-60">
+              {subTitle}
+            </h3>
+            <ul className="list-disc ml-5 text-[16px] md:text-[20px] text-gray-60">
               {contents.map((content, index) => (
                 <li key={index}>{content}</li>
               ))}
@@ -66,7 +68,9 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
               )}
             </div>
             <hr />
-            <p className="whitespace-pre-line text-[20px]">{description}</p>
+            <p className="whitespace-pre-line text-[16px] md:text-[20px]">
+              {description}
+            </p>
           </div>
 
           <div className="flex lg:flex-row flex-col gap-y-3 ">
@@ -88,12 +92,12 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
           </div>
 
           <div className="flex flex-col gap-y-3">
-            <h3 className="text-[28px] font-bold">Tech Stack</h3>
+            <h3 className="text-[24px] md:text-[28px] font-bold">Tech Stack</h3>
             <div className="flex flex-wrap gap-x-2">
               {technologies.map((tech, index) => (
                 <div
                   key={index}
-                  className="px-3 py-2 rounded-full bg-gray-10 font-semibold text-[20px]"
+                  className="px-3 py-2 rounded-full bg-gray-10 font-semibold text-[14px] md:text-[20px]"
                 >
                   {tech}
                 </div>
@@ -102,9 +106,9 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
           </div>
 
           <div className="flex flex-col gap-y-4">
-            <h3 className="text-[28px] font-bold">My Role</h3>
+            <h3 className="text-[24px] md:text-[28px] font-bold">My Role</h3>
             <div>
-              <h3 className="text-[22px] font-semibold mb-2">
+              <h3 className="text-[18px] md:text-[22px] font-semibold mb-2">
                 🧑‍💻 역할 및 포지션
               </h3>
               <ul className="list-disc ml-5 text-[18px] text-gray-700">
@@ -114,7 +118,9 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
               </ul>
             </div>
             <div>
-              <h3 className="text-[22px] font-semibold mb-2">📄 담당 페이지</h3>
+              <h3 className="text-[18px] md:text-[22px] font-semibold mb-2">
+                📄 담당 페이지
+              </h3>
               <ul className="list-disc ml-5 text-[18px] text-gray-700">
                 {pages.map((page, index) => (
                   <li key={index}>{page}</li>
@@ -122,7 +128,9 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
               </ul>
             </div>
             <div>
-              <h3 className="text-[22px] font-semibold mb-2">⚙️ 세부 기능</h3>
+              <h3 className="text-[18px] md:text-[22px] font-semibold mb-2">
+                ⚙️ 세부 기능
+              </h3>
               <ul className="list-disc ml-5 text-[18px] text-gray-700">
                 {details.map((detail, index) => (
                   <li key={index}>{detail}</li>
@@ -132,12 +140,12 @@ const ProjectModal: React.FC<ModalTriggerProps> = ({
           </div>
           {issueResolution && (
             <div className="flex flex-col gap-y-3">
-              <h3 className="text-[28px] font-bold">ETC.</h3>
+              <h3 className="text-[24px] md:text-[28px] font-bold">ETC.</h3>
               <div className="text-[20px]">{issueResolution}</div>
             </div>
           )}
           <div className="flex flex-col w-full gap-y-3">
-            <h3 className="text-[28px] font-bold">Link</h3>
+            <h3 className="text-[24px] md:text-[28px] font-bold">Link</h3>
             <div className="flex w-full text-[20px]">{externalSite}</div>
           </div>
         </div>

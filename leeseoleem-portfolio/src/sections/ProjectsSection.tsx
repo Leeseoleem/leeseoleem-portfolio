@@ -15,6 +15,7 @@ import {
   envLink,
   handleMyGit,
   handleMyWeb,
+  handleWebBuild,
 } from "../utils/github";
 import {
   FaGithubRef,
@@ -37,6 +38,31 @@ const ProjectsSection = () => {
         <div className="flex my-8 flex-col gap-y-6">
           <ProjectCard
             {...portfolioProject}
+            issueResolution={
+              <div className="flex flex-col gap-y-4">
+                <div>
+                  <div className="flex flex-col lg:flex-row py-4 gap-y-2">
+                    <p className="text-[18px] font-medium whitespace-pre-line">
+                      프로젝트 웹 사이트 배포하기
+                    </p>
+                    <div className="flex flex-col lg:mx-auto">
+                      <p className="text-[18px] text-gray-60 whitespace-pre-line">
+                        GitHub Pages를 활용한 배포 진행
+                      </p>
+                      <div>
+                        <button
+                          onClick={handleWebBuild}
+                          className="flex items-center gap-x-2 p-2 rounded-md bg-[#1ABC9C] text-white text-[14px]"
+                        >
+                          <VelogIcon />
+                          블로그 링크
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            }
             externalSite={
               <div className="flex gap-x-8">
                 <button onClick={handleMyGit}>
@@ -54,8 +80,6 @@ const ProjectsSection = () => {
             issueResolution={
               <div className="flex flex-col gap-y-4">
                 <div>
-                  <h3 className="text-[20px] font-semibold mb-1">이슈 내용</h3>
-
                   <div className="flex flex-col lg:flex-row py-4 gap-y-2">
                     <p className="text-[18px] font-medium whitespace-pre-line">
                       firebase의 onSnapshot() 사용 후 로그아웃 시 오류:
@@ -96,7 +120,6 @@ const ProjectsSection = () => {
             issueResolution={
               <div className="flex flex-col gap-y-4">
                 <div>
-                  <h3 className="text-[20px] font-semibold mb-1">이슈 내용</h3>
                   <div className="flex flex-col lg:flex-row py-4 gap-y-2">
                     <p className="text-[18px] font-medium whitespace-pre-line">
                       깃허브 연동 시 서버 api 주소 노출 문제

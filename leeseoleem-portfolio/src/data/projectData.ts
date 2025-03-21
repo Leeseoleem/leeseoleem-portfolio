@@ -27,13 +27,6 @@ export const glassBottleProject = {
   technologies: ["React Native", "JavaScript", "Firebase", "Github", "Figma"],
 };
 
-export const glassBottleImageUrls = [
-  "/images/glassBottle/main.jpg",
-  "/images/glassBottle/letter.jpg",
-  "/images/glassBottle/write.jpg",
-  "/images/glassBottle/list.jpg",
-];
-
 // 졸업 프로젝트
 export const VRRS_Project = {
   title: "채식 어디",
@@ -91,17 +84,6 @@ export const VRRS_Project = {
     "Figma",
   ],
 };
-
-export const VRRSImageUrls = [
-  "/images/vrrs/a.jpg",
-  "/images/vrrs/b.jpg",
-  "/images/vrrs/c.jpg",
-  "/images/vrrs/d.jpg",
-  "/images/vrrs/e.jpg",
-  "/images/vrrs/h.jpg",
-  "/images/vrrs/i.jpg",
-  "/images/vrrs/j.jpg",
-];
 
 // 포트폴리오 웹 사이트
 export const portfolioProject = {

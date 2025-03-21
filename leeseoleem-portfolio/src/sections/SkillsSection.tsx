@@ -26,19 +26,19 @@ const SkillsSection = () => {
           <TabGroup>
             <TabList className="flex w-full gap-x-4">
               <Tab
-                className="text-[20px] text-gray-30 focus:outline-none
+                className="text-[16px] md:text-[20px] text-gray-30 focus:outline-none
             px-8 data-[selected]:py-4 data-[selected]:rounded-t-xl data-[selected]:bg-gray-white data-[selected]:font-semibold data-[selected]:text-gray-font"
               >
                 Main Skills
               </Tab>
               <Tab
-                className="text-[20px] text-gray-30 focus:outline-none
+                className="text-[16px] md:text-[20px] text-gray-30 focus:outline-none
           px-8 data-[selected]:py-4 data-[selected]:rounded-t-xl data-[selected]:bg-gray-white data-[selected]:font-semibold data-[selected]:text-gray-font"
               >
                 Sub Skill
               </Tab>
               <Tab
-                className="text-[20px] text-gray-30 focus:outline-none
+                className="text-[16px] md:text-[20px] text-gray-30 focus:outline-none
             px-8 data-[selected]:py-4 data-[selected]:rounded-t-xl data-[selected]:bg-gray-white data-[selected]:font-semibold data-[selected]:text-gray-font"
               >
                 ETC
@@ -47,7 +47,7 @@ const SkillsSection = () => {
 
             <TabPanels>
               <TabPanel>
-                <div className="flex flex-col w-full rounded-xl rounded-tl-none bg-white">
+                <div className="flex flex-col w-full rounded-xl rounded-tl-none rounded-t-none bg-white">
                   <div className="flex flex-col items-start md:flex-row md:items-center m-10 space-y-2">
                     <p className="text-[20px] font-semibold w-[120px]">
                       Languages
@@ -114,7 +114,7 @@ const SkillsSection = () => {
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="flex flex-col w-full rounded-xl rounded-tl-none bg-white">
+                <div className="flex flex-col w-full rounded-xl bg-white">
                   <div className="flex flex-col items-start md:flex-row md:items-center m-10 space-y-2">
                     <p className="text-[20px] font-semibold w-[120px]">
                       Languages
@@ -148,7 +148,7 @@ const SkillsSection = () => {
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="flex flex-col w-full rounded-xl rounded-tl-none bg-white">
+                <div className="flex flex-col w-full rounded-xl md:rounded-tr-none bg-white">
                   <div className="flex flex-col items-start md:flex-row md:items-center m-10 space-y-2">
                     <p className="text-[20px] font-semibold w-[140px]">
                       Collaboration

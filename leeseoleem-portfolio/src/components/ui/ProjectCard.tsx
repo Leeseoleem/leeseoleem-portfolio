@@ -38,10 +38,12 @@ const ProjectCard = ({
     <div className="w-full px-4 text-gray-font ">
       <div className="flex flex-col border-gray-20 shadow-md border-2 rounded-xl p-8 gap-y-8">
         <div>
-          <h3 className="text-[32px] font-semibold">{title}</h3>
-          <h5 className="text-[20px] text-gray-50 mb-3">{subTitle}</h5>
+          <h3 className="text-[28px] md:text-[32px] font-semibold">{title}</h3>
+          <h5 className="text-[18px] md:text-[20px] text-gray-50 mb-3">
+            {subTitle}
+          </h5>
 
-          <ul className="list-none text-[18px] text-gray-60">
+          <ul className="list-none text-[16px] md:text-[18px] text-gray-60">
             {contents.map((content, index) => (
               <li key={index}>{content}</li>
             ))}

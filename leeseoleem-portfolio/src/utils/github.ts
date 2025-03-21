@@ -40,3 +40,8 @@ export const handleMyGit = () => {
 export const handleMyWeb = () => {
   window.location.href = "https://leeseoleem.github.io/leeseoleem-portfolio/";
 };
+
+export const handleWebBuild = () => {
+  window.location.href =
+    "https://velog.io/@leeseoleem1014/React-react-프로젝트-배포하기-GitHub-Pages";
+};
